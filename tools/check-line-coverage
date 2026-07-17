@@ -9,7 +9,7 @@ fi
 
 input_file=$1
 if [[ ! -f $input_file ]]; then
-    echo "Input file $input_file does not exist"
+    echo "Input file $input_file does not exist" >&2
     exit 1
 fi
 
